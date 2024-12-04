@@ -18,7 +18,7 @@ while [ $i -lt $repeticiones ]
 done
 else
 if [ $1 = '-h' ]; then
-	cat /home/cribongra/ayuda.txt
+	cat /etc/estudia/ayuda
 fi
 if [ $1 = '--hello' ]; then
 	echo hello world
