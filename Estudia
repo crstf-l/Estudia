@@ -1,0 +1,27 @@
+#!/bin/sh
+#Script de Crstfl
+#Este script lo que consiste es en la repeticion de un nombre mas estudia.
+#parametros
+if [ $# -eq 0 ]; then
+#nombre y n veces
+read -p "Nombre: " name
+read -p "Veces que quieres que diga el nombre: " repeticiones
+export i=0
+if [ $repeticiones = '' ]; then
+    repeticiones=100
+else
+    repeticiones=$repeticiones
+fi
+while [ $i -lt $repeticiones ]
+	do echo "$name, ESTUDIA" && sleep 0,01;
+	i=$((i+1))
+done
+else
+if [ $1 = '-h' ]; then
+	cat /home/cribongra/ayuda.txt
+fi
+if [ $1 = '--hello' ]; then
+	echo hello world
+fi
+#final del script
+fi
