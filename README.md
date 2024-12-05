@@ -12,4 +12,4 @@ cd Estudia
 chmod +x Installer.sh
 sudo ./Installer.sh 
 ```
-Thank you
+<p>Thank you</p>
