@@ -13,7 +13,7 @@ else
     repeticiones=$repeticiones
 fi
 while [ $i -lt $repeticiones ]
-	do echo "$name, ESTUDIA" && sleep 0,01;
+	do echo "$name, ESTUDIA" && sleep 0.01;
 	i=$((i+1))
 done
 else
